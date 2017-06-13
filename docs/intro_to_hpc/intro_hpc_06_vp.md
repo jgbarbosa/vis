@@ -11,7 +11,7 @@ The TACC Visualization Portal jobs page also shows the current usage of Maverick
 #### Login
 
 <center><img src="../../resources/visportal.png" style="height:400px;"></center>
-Access [https://vis.tacc.utexas.edu](https://vis.tacc.utexas.edu) and enter your TACC user name or choose XSEDE to use your XSEDE account.
+Access https://vis.tacc.utexas.edu and enter your TACC user name or choose XSEDE to use your XSEDE account.
 
 #### Submiting a Remote Desktop Session
 
