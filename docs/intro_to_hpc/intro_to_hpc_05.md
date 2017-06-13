@@ -14,7 +14,7 @@ First, navigate to the `Lab04` directory where we have an example job script pre
 $ cd
 $ cd IntroToLinuxHPC/Lab04
 $ cat job.slurm
- 
+
 #!/bin/bash
 #----------------------------------------------------
 # Example SLURM job script to run MPI applications on
@@ -27,9 +27,9 @@ $ cat job.slurm
 #SBATCH -n               # Total number of mpi tasks requested
 #SBATCH -t               # Run time (hh:mm:ss)
 #SBATCH -A               # <-- Allocation name to charge job against
- 
+
 # Everything below here should be Linux commands
- 
+
 ```
 
 First, we must know an application we want to run, and a research question we want to ask. This generally comes from your own research. For this example, we want to use the application called `autodock_vina` to check how well a small molecule ligand fits within a protein binding site. All the data required for this job is in a subdirectory called `data`:
@@ -52,23 +52,23 @@ Next, we need to fill out `job.slurm` to request the necessary resources. I have
 #SBATCH -N 1             # Total number of nodes requested (16 cores/node)
 #SBATCH -n 1             # Total number of mpi tasks requested
 #SBATCH -t 00:10:00      # Run time (hh:mm:ss)
-#SBATCH -A CTLS2017      # <-- Allocation name to charge job against
+#SBATCH -A VIS      # <-- Allocation name to charge job against
 ```
 
 Now, we need to provide instructions to the compute node on how to run `autodock_vina`. This information would come from the `autodock_vina` instruction manual. Continue editing `job.slurm` with VIM, and add this to the bottom:
 ```
 # Everything below here should be Linux commands
- 
+
 echo "starting at:"
 date
- 
+
 module list
 module load autodock_vina
 module list
- 
+
 cd data/
 vina --config configuration_file.txt --out ../results/output_ligands.pdbqt
- 
+
 echo "ending at:"
 date
 ```
@@ -99,7 +99,7 @@ If everything went well, you should have an output file named something similar 
 $ more
 $ cat vina_job.o864828
     # closely examine output
- 
+
 $ ls results
 output_ligands.pdbqt
 ```

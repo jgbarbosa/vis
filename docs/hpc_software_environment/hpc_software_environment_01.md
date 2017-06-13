@@ -9,7 +9,7 @@ Mac / Linux:
 
 ```
   Open the application 'Terminal'
-  ssh username@ls5.tacc.utexas.edu 
+  ssh username@maverick.tacc.utexas.edu
   (enter password)
   (enter 6-digit token)
 ```
@@ -18,7 +18,7 @@ Windows:
 
 ```
   Open the application 'PuTTY'
-  enter Host Name: ls5.tacc.utexas.edu
+  enter Host Name: maverick.tacc.utexas.edu
   (click 'Open')
   (enter username)
   (enter password)
@@ -26,9 +26,6 @@ Windows:
 ```
 
 In a browser, navigate to the Etherpad page:
-
-[https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)
-
 
 ### Module Objectives
 
@@ -44,4 +41,3 @@ Following along on the command line is **strongly encouraged**. We will go throu
 
 
 Next: [Lonestar5 Basics](hpc_software_environment_02.md) | Top: [Course Overview](../../index.md)
-

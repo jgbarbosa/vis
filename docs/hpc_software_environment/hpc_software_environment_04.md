@@ -17,10 +17,10 @@ $ cd test_data
 $ ls -l
 ```
 
-Since it is against policy to run applications on the login nodes, we must gain access to a compute node. The TACC tool `idev` is used to start an interactive session on a Lonestar5 compute node. Interactive sessions are helpful to test code, debug code, and practice small jobs before submitting large jobs: 
+Since it is against policy to run applications on the login nodes, we must gain access to a compute node. The TACC tool `idev` is used to start an interactive session on a Lonestar5 compute node. Interactive sessions are helpful to test code, debug code, and practice small jobs before submitting large jobs:
 ```
 $ idev --help
-$ idev -p normal -m 180 --reservation=CTLS2017
+$ idev -p normal -m 180 --reservation=VIS...
 ```
 
 
@@ -43,7 +43,7 @@ $ which tophat      # tophat now in path
 Finally, we will test Tophat interactively using the command provided on the tophat website:
 ```
 $ tophat -r 20 test_ref reads_1.fq reads_2.fq
-``` 
+```
 
 Carefully read the output to screen to make sure there are no errors. If everything worked, you should get output similar to the following:
 ```
@@ -55,10 +55,9 @@ Right reads:
           Input     :       100
            Mapped   :        70 (70.0% of input)
 71.0% overall read mapping rate.
- 
+
 Aligned pairs:        50
 50.0% concordant pair alignment rate.
 ```
 
 Previous: [Installing an Application](hpc_software_environment_03.md) | Next: [Profiling an Application](hpc_software_environment_05.md) | Top: [Course Overview](../../index.md)
-

@@ -2,7 +2,7 @@
 
 ### Module Objectives
 
-This module will be fully interactive. Participants are **strongly encouraged** to follow along on the command line. Even if you already have Linux familiarity, please follow along becuase we will create files / directories that we use later on in the workshop. After taking this module, participants should be able to:
+This module will be fully interactive. Participants are **strongly encouraged** to follow along on the command line. Even if you already have Linux familiarity, please follow along because we will create files / directories that we use later on in the workshop. After taking this module, participants should be able to:
 
  * Describe basic functions of essential Linux commands
  * Use Linux commands to navigate a file system and manipulate files
@@ -23,7 +23,7 @@ Linux is an operating system often cited for its:
 These are all good reasons to use Linux. But the *real* reasons we are learning Linux today are:
 
  * **Most supercomputers you will use operate on Linux**
- * **Most life sciences software packages you will use were probably designed and optimized for Linux**
+ * **Most visualization packages will use were probably designed and optimized for Linux**
 
 
 ### Topics Covered
@@ -37,8 +37,4 @@ These are all good reasons to use Linux. But the *real* reasons we are learning 
  * Shortcuts (`Tab, Up Arrow, Ctrl+c, Ctrl+d, ./, ../, ~/, >, >>, *, |, &`)
  * Text editing with vim (insert mode, normal mode, navigating, saving, quitting)
 
-### Etherpad
-[https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)
-
 Next: [Looking and Moving Around](intro_to_linux_02.md) | Top: [Course Overview](../../index.md)
-

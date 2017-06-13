@@ -4,7 +4,7 @@ On a Windows or Mac desktop, our present location determines what files and fold
 
 ```
 $ pwd
-/home1/03439/wallen 
+/home1/03439/wallen
 ```
 
 This home location on the Linux filesystem is unique for each user, and it is roughly analogous to C:\Users\username on Windows, or /Users/username on Mac.
@@ -82,7 +82,7 @@ We are back in our home directory. Finally, use the  `rmdir` (remove directory) 
 
 ```
 $ mkdir junkfolder
-$ ls 
+$ ls
 folder1 folder2 folder3 junkfolder
 $ rmdir junkfolder
 $ ls
@@ -108,12 +108,9 @@ $ tree .
 2. Make a new folder called `challenge01`
 3. Navigate into that new folder
 4. Make 5 sub folders called `a`, `b`, `c`, `d`, `e`
-5. Wihin each of those sub folders, make 5 sub folders called `1`, `2`, `3`, `4`, `5`
+5. Within each of those sub folders, make 5 sub folders called `1`, `2`, `3`, `4`, `5`
 6. Navigate back to your home directory and print a hierarchical view of the `challenge01` folder
 7. Advanced Linux users: can you do this on one line?
-
-
-[Click here for solution](intro_to_linux_02_solution.md)
 
 ### Review of Topics Covered
 
