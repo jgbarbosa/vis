@@ -1,10 +1,10 @@
 ## Making Modules
 
-The easiest way to share an application with your colleagues (or others) is to wrap up that application in a module. Just like the central module system on Lonestar5, each user may have their own module folder(s) to easily load or unload custom applications. The first step is to create a module folder in an area that you do not mind making public. Here, we will do this in the `$WORK/apps` folder, but you may choose to do this somewhere else:
+The easiest way to share an application with your colleagues (or others) is to wrap up that application in a module. Just like the central module system on Maverick, each user may have their own module folder(s) to easily load or unload custom applications. The first step is to create a module folder in an area that you do not mind making public. Here, we will do this in the `$WORK/apps` folder, but you may choose to do this somewhere else:
 ```
 $ cd $WORK/apps
 $ pwd
-/work/03439/wallen/lonestar/apps
+/work/03439/wallen/maverick/apps
 $ ls                              # my installation of tophat is in this same folder
 $ mkdir -p modulefiles/tophat     # check the man page if you do not know what -p does
 ```
@@ -75,8 +75,8 @@ whatis("Keywords: Biology, Genomics, Alignment, Sequencing")
 whatis("URL: https://ccb.jhu.edu/software/tophat/tutorial.shtml")
 whatis("Description: A spliced read mapper for RNA-seq")
 
-setenv("TACC_TOPHAT_DIR", "/work/03439/wallen/lonestar/apps/tophat/2.1.1")
-prepend_path("PATH",      "/work/03439/wallen/lonestar/apps/tophat/2.1.1/bin")
+setenv("TACC_TOPHAT_DIR", "/work/03439/wallen/maverick/apps/tophat/2.1.1")
+prepend_path("PATH",      "/work/03439/wallen/maverick/apps/tophat/2.1.1/bin")
 
 prereq("bowtie/2.2.6")
 prereq("boost/1.59")
@@ -94,9 +94,9 @@ This is the list of locations that the `module avail` or `module load` commands 
 ```
 $ cd $WORK/apps/modulefiles
 $ pwd
-/work/03439/wallen/lonestar/apps/modulefiles
+/work/03439/wallen/maverick/apps/modulefiles
 $ echo $PWD
-/work/03439/wallen/lonestar/apps/modulefiles
+/work/03439/wallen/maverick/apps/modulefiles
 $ module use $PWD
 $ echo $MODULEPATH
 ```
@@ -112,17 +112,17 @@ $ tophat --version
 
 The final step is to modify the permissions of the module file (and parent directories) to share with your target group. For example:
 ```
-$ cd /work/03439/wallen/lonestar/apps
+$ cd /work/03439/wallen/maverick/apps
 $ chmod -R go=u-w modulefiles                  # this is assuming I already changed permissions above this dir
 ```
 
 Then, you would need to just ask your colleagues to execute the following command to have access to your module:
 ```
-$ module use /work/03439/wallen/lonestar/apps/modulefiles
+$ module use /work/03439/wallen/maverick/apps/modulefiles
 ```
 
 
-If, for example, you want to install a custom version of an application that is already in the Lonestar5 central module system, you can still do so. Modify either the name of the application directory or the name of the `lua` file so that loading it does not conflict with the existing module file. For example, you could name the local module `tophat-wallen/2.1.1` so it is different from any other `tophat/2.1.1`.
+If, for example, you want to install a custom version of an application that is already in the Maverick central module system, you can still do so. Modify either the name of the application directory or the name of the `lua` file so that loading it does not conflict with the existing module file. For example, you could name the local module `tophat-wallen/2.1.1` so it is different from any other `tophat/2.1.1`.
 
 Now, set permissions and try loading your neighbor's (or my) version of Tophat.
 

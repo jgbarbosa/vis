@@ -24,7 +24,7 @@ Windows users would typically use the program "PuTTY" to perform this operation.
 [local]$ 
 ```
 
-Copying files from your local computer to Lonestar5 would require the `scp` command (Windows users use the program "WinSCP"):
+Copying files from your local computer to Maverick would require the `scp` command (Windows users use the program "WinSCP"):
 
 ```
 [local]$ scp my_file wallen@maverick.tacc.utexas.edu:~/
@@ -32,7 +32,7 @@ Copying files from your local computer to Lonestar5 would require the `scp` comm
 (enter token)
 ```
 
-In this command, you specify the name of the file you want to transfer (`my_file`), the username (`wallen`), the hostname (`maverick.tacc.utexas.edu`), and the path you want to put the file (`~/`). Take careful notice of the seperators including spaces, the @ symbol and the colon. Copy files from Lonestar5 to your local computer using ths following:
+In this command, you specify the name of the file you want to transfer (`my_file`), the username (`wallen`), the hostname (`maverick.tacc.utexas.edu`), and the path you want to put the file (`~/`). Take careful notice of the seperators including spaces, the @ symbol and the colon. Copy files from Maverick to your local computer using ths following:
 
 ```
 [local]$ scp wallen@maverick.tacc.utexas.edu:~/my_file ./
@@ -53,8 +53,8 @@ This is just the basics of copying files. See example `scp` usage [here](https:/
 
 ### Exercise
 
-1. Identify which Lonestar5 login node you are on (login1, login2, login3)
-2. Remotely login to a different Lonestar5 login node and list what files are available.
+1. Identify which Maverick login node you are on (login1, login2, login3)
+2. Remotely login to a different Maverick login node and list what files are available.
 3. Logout until you are back to your original login node.
 4. Copy the file `chr21.fa` to your local computer.
 

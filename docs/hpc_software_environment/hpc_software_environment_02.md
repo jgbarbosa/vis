@@ -1,8 +1,8 @@
-## Lonestar5 Basics
+## Maverick Basics
 
-<center><img src="../../resources/lonestar.jpg" style="height:300px;"></center>
+<center><img src="../../resources/maverick.jpg" style="height:300px;"></center>
 
-Lonestar5 has a complex architecture consisting of a few different types of nodes:
+Maverick has a complex architecture consisting of a few different types of nodes:
 
 ### Architecture
 
@@ -110,7 +110,7 @@ Loading the `cray_mpich` module will put the compilers `mpicc`, `mpicxx`, and `m
 
 ### Common Dependencies
 
-Many programs you install will depend on some other program already being installed and in your path. This information is typically included in the online documentation or install instructions for the program you are trying to install. A good rule of thumb is to check if the dependency already exists on Lonestar5 before trying to install it yourself. Check out these modules on Lonestar5 which are common dependencies for other packages:
+Many programs you install will depend on some other program already being installed and in your path. This information is typically included in the online documentation or install instructions for the program you are trying to install. A good rule of thumb is to check if the dependency already exists on Maverick before trying to install it yourself. Check out these modules on Maverick which are common dependencies for other packages:
 ```
 $ module spider mkl
 $ module spider fftw
@@ -126,7 +126,7 @@ $ module spider boost
 ### Exercise
 
 1. Try loading gcc and intel compilers at the same time. What happens?
-2. Determine recommended compiler / dependencies for a software package you use. Are they available on Lonestar5?
+2. Determine recommended compiler / dependencies for a software package you use. Are they available on Maverick?
 
 [Click here for solution](hpc_software_environment_02_solution.md)
 

@@ -1,6 +1,6 @@
 Note: Text following a pound sign `#` are comments
 
-1) Identify which Lonestar5 login node you are on (login1, login2, login3)
+1) Identify which Maverick login node you are on (login1, login2, login3)
 ```
 $ hostname
 login1
@@ -8,7 +8,7 @@ $ hostname -f
 login1.maverick.tacc.utexas.edu
 ```
 
-2) Remotely login to a different Lonestar5 login node and list what files are available.
+2) Remotely login to a different Maverick login node and list what files are available.
 ```
 login1.maverick$ ssh wallen@login2.maverick.tacc.utexas.edu
 login2.maverick$ ls

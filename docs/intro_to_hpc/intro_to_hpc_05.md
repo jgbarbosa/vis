@@ -1,12 +1,12 @@
 ## Batch Job Submission
 
-As we discussed before, on Lonestar5 there are login nodes and compute nodes.
+As we discussed before, on Maverick there are login nodes and compute nodes.
 
 <center><img src="../../resources/hpc_schematic.png" style="height:300px;"></center>
 
 We cannot run the applications we need for our research on the login nodes because they require too many resources and will interrupt the work of others. Instead, we must write a short text file containing a list of the resources we need, and containing the command(s) for running the application. Then, we submit that text file to a queue to run on compute nodes. This process is called **batch job submission**.
 
-There are several queues available on Lonestar5. It is important to understand the queue limitations, and pick a queue that is appropriate for your job. Documentation can be found [here](https://portal.tacc.utexas.edu/user-guides/lonestar5#production-queues). Today, we will be using the `development` queue which has a max runtime of 2 hours, and users can only submit one job at a time.
+There are several queues available on Maverick. It is important to understand the queue limitations, and pick a queue that is appropriate for your job. Documentation can be found [here](https://portal.tacc.utexas.edu/user-guides/Maverick#production-queues). Today, we will be using the `development` queue which has a max runtime of 2 hours, and users can only submit one job at a time.
 
 
 First, navigate to the `Lab04` directory where we have an example job script prepared, called `job.slurm`:
@@ -52,7 +52,7 @@ Next, we need to fill out `job.slurm` to request the necessary resources. I have
 #SBATCH -N 1             # Total number of nodes requested (16 cores/node)
 #SBATCH -n 1             # Total number of mpi tasks requested
 #SBATCH -t 00:10:00      # Run time (hh:mm:ss)
-#SBATCH -A VIS      # <-- Allocation name to charge job against
+#SBATCH -A CTLS2017      # <-- Allocation name to charge job against
 ```
 
 Now, we need to provide instructions to the compute node on how to run `autodock_vina`. This information would come from the `autodock_vina` instruction manual. Continue editing `job.slurm` with VIM, and add this to the bottom:
@@ -89,7 +89,7 @@ If for any reason you need to cancel a job, use the `scancel` command with the 6
 $ scancel jobid
 ```
 
-For more example scripts, see this directory on Lonestar5:
+For more example scripts, see this directory on Maverick:
 ```
 $ ls /share/doc/slurm/
 ```
@@ -108,7 +108,7 @@ output_ligands.pdbqt
 
 *(Output visualized in UCSF Chimera)*
 
-Congratulations! You ran a batch job on Lonestar5!
+Congratulations! You ran a batch job on Maverick!
 
 ### Other Considerations:
 
@@ -135,4 +135,4 @@ HPC systems are shared resources. Your jobs and activity on a cluster, if misman
 
 
 
-Previous: [The .bashrc](intro_to_hpc_04.md) | Top: [Course Overview](../../index.md)
+Previous: [The .bashrc](intro_to_hpc_04.md) | Next: [Visualization on Maverick](intro_to_hpc_06.md) | Top: [Course Overview](../../index.md)

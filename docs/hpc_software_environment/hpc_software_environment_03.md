@@ -6,11 +6,11 @@ The first thing to do is decide a good place to install the application. The `$W
 ```
 $ cd $WORK
 $ pwd
-/work/03439/wallen/lonestar
+/work/03439/wallen/maverick
 $ mkdir apps
 $ cd apps
 $ pwd
-/work/03439/wallen/lonestar/apps
+/work/03439/wallen/maverick/apps
 ```
 
 According to the Tophat documentation, we need `bowtie2` and `boost` are dependencies. Check your environment and load what we know we need for Tophat:
@@ -53,7 +53,7 @@ A few things to note from the help text:
 
 Try to configure using the `--prefix` and `--enable-intel64` flags:
 ```
-$ ./configure --prefix=/work/03439/wallen/lonestar/apps/tophat/2.1.1 \
+$ ./configure --prefix=/work/03439/wallen/maverick/apps/tophat/2.1.1 \
               --enable-intel64
 ...
 checking for boostlib >= 1.38.0... configure: error: We could not detect the
@@ -66,7 +66,7 @@ http://randspringer.de/boost for more documentation.
 
 It works for a little bit before giving the boost error above. Perhaps we do need to specify the boost path after all:
 ```
-$ ./configure --prefix=/work/03439/wallen/lonestar/apps/tophat/2.1.1 \
+$ ./configure --prefix=/work/03439/wallen/maverick/apps/tophat/2.1.1 \
               --with-boost=/opt/apps/intel16/boost/1.59 \
               --enable-intel64
 ```
@@ -80,7 +80,7 @@ This time it got all the way through the `./configure` step, except there is som
   BOOST libraries:     -lboost_thread -lboost_system
   GCC version:         gcc (GCC) 4.9.3
   Host System type:    x86_64-unknown-linux-gnu
-  Install prefix:      /work/03439/wallen/lonestar/training/apps/tophat/2.1.1
+  Install prefix:      /work/03439/wallen/maverick/training/apps/tophat/2.1.1
   Install eprefix:     ${prefix}
 ...
 ```
@@ -118,7 +118,7 @@ echo $CC
 $ export CXX=`which icpc`
 ```
 
-And, if you recall from before, Lonestar5 has nodes with different architectures. Now is our chance to specify a few extra compilation flags so that the binaries can run anywhere:
+And, if you recall from before, Maverick has nodes with different architectures. Now is our chance to specify a few extra compilation flags so that the binaries can run anywhere:
 ```
 $ export CFLAGS="-xAVX -axCORE-AVX2"
 $ export CXXFLAGS="-xAVX -axCORE-AVX2"
@@ -128,7 +128,7 @@ $ export LDFLAGS="-xAVX -axCORE-AVX2"
 
 Configure one more time and make sure the output makes sense:
 ```
-$ ./configure --prefix=/work/03439/wallen/lonestar/apps/tophat/2.1.1 \
+$ ./configure --prefix=/work/03439/wallen/maverick/apps/tophat/2.1.1 \
               --with-boost=/opt/apps/intel16/boost/1.59 \
               --enable-intel64
 ...
@@ -138,7 +138,7 @@ $ ./configure --prefix=/work/03439/wallen/lonestar/apps/tophat/2.1.1 \
   BOOST libraries:     -lboost_thread -lboost_system
   GCC version:         icc (ICC) 16.0.1 20151021
   Host System type:    x86_64-unknown-linux-gnu
-  Install prefix:      /work/03439/wallen/lonestar/apps/tophat/2.1.1
+  Install prefix:      /work/03439/wallen/maverick/apps/tophat/2.1.1
   Install eprefix:     ${prefix}
 ...
 ```
@@ -153,5 +153,5 @@ $ ls -l ../tophat/2.1.1/bin
 
 The `tophat/2.1.1/bin` directory should be filled with executables.
 
-Previous: [Lonestar5 Basics](hpc_software_environment_02.md) | Next: [Testing an Application](hpc_software_environment_04.md) | Top: [Course Overview](../../index.md)
+Previous: [Maverick Basics](hpc_software_environment_02.md) | Next: [Testing an Application](hpc_software_environment_04.md) | Top: [Course Overview](../../index.md)
 
