@@ -6,5 +6,7 @@
 
 # Modules
 
-* [Introduction to Linux](docs/intro_to_linux/intro_to_linux_01.md) - based of Joe Allan and James Carson (https://github.com/jamescarson3/ctls2017)
-* [Introduction to High Performance Computing](docs/intro_to_hpc/intro_to_hpc_01.md) - based of Joe Allan and James Carson (https://github.com/jamescarson3/ctls2017)
+* [Introduction to Linux](docs/intro_to_linux/intro_to_linux_01.md) <br>
+  based of [Joe Allan and James Carson](https://github.com/jamescarson3/ctls2017)
+* [Introduction to High Performance Computing](docs/intro_to_hpc/intro_to_hpc_01.md) <br>
+  based of [Joe Allan and James Carson](https://github.com/jamescarson3/ctls2017)
