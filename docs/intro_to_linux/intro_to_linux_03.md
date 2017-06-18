@@ -66,7 +66,7 @@ _       # underscore
 ### Exercise
 
 1. Navigate to your home directory
-2. Execute this exact command: `cp -r /work/0003/train332public/challenge02 ./`
+2. Execute this exact command: `cp -r /work/0003/train332/public/challenge02 ./`
 3. Navigate into the `challenge02` folder.
 4. Somewhere within there is a file. Can you find it?
 5. Advanced Linux users: What command can be used to generate this hierarchy of folders?

@@ -4,7 +4,7 @@ We installed Tophat, now it is time to test it to make sure it is working. Revis
 
 First, we will create a suitable place to test.
 ```
-$ cd /work/0003/train332maverick/apps/
+$ cd /work/0003/train332/maverick/apps/
 $ mkdir tophat-test
 $ cd tophat-test
 ```
@@ -35,7 +35,7 @@ We also have to put Tophat in our path. There is no module for Tophat yet, so we
 ```
 $ echo $PATH        
 $ which tophat      # no tophat yet
-$ export PATH=$PATH:/work/0003/train332maverick/apps/tophat/2.1.1/bin
+$ export PATH=$PATH:/work/0003/train332/maverick/apps/tophat/2.1.1/bin
 $ echo $PATH
 $ which tophat      # tophat now in path
 ```
