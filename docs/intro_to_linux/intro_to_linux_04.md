@@ -5,7 +5,7 @@ Everything we have seen so far has been with empty files and folders. We will no
 ```
 $ cd ~     # the tilde ~ is also a shortcut referring to your home directory
 $ pwd
-/home/03439/wallen
+/home/03439/train332
 $ cp /work/0003/train332/public/IntroToLinuxHPC.tar .
 ```
 

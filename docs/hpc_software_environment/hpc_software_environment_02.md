@@ -56,7 +56,7 @@ You have access to the following spaces (5-digit lustre number and username vary
 ```
 /home1/0003/train332/      # 5 GB quota
 /work/0003/train332/       # 1 TB quota
-/scratch/03439/wallen/    # unlimited quota, but subject to purge
+/scratch/03439/train332/    # unlimited quota, but subject to purge
 ```
 
 Shortcuts to switch between the three spaces are:

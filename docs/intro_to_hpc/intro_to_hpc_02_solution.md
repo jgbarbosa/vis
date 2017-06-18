@@ -17,7 +17,7 @@ $ ls -l /opt/apps/tacc/bin
 
 3) Find an environment variable that stores your username.
 ```
-$ env | grep "wallen"
+$ env | grep "train332"
 ```
 
 

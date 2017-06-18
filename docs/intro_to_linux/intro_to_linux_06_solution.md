@@ -10,7 +10,7 @@ login1.maverick.tacc.utexas.edu
 
 2) Remotely login to a different Maverick login node and list what files are available.
 ```
-login1.maverick$ ssh wallen@login2.maverick.tacc.utexas.edu
+login1.maverick$ ssh train332@login2.maverick.tacc.utexas.edu
 login2.maverick$ ls
 ... # the same files will be available on different login nodes
 login2.maverick$ ssh login3.maverick.tacc.utexas.edu    # what happens if you omit the username?
@@ -29,7 +29,7 @@ login1.maverick$             # logout one more time and you will be back on the 
 4) Copy the file `chr21.fa` to your local computer.
 ```
 # from new Terminal session
-[local]$ ssh wallen@maverick.tacc.utexas.edu:~/IntroToLinuxHPC/Lab02/chr21.fa ./
+[local]$ ssh train332@maverick.tacc.utexas.edu:~/IntroToLinuxHPC/Lab02/chr21.fa ./
 (enter password)
 (enter token)
 ```

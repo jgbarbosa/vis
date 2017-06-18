@@ -122,7 +122,7 @@ $ module use /work/0003/train332/maverick/apps/modulefiles
 ```
 
 
-If, for example, you want to install a custom version of an application that is already in the Maverick central module system, you can still do so. Modify either the name of the application directory or the name of the `lua` file so that loading it does not conflict with the existing module file. For example, you could name the local module `tophat-wallen/2.1.1` so it is different from any other `tophat/2.1.1`.
+If, for example, you want to install a custom version of an application that is already in the Maverick central module system, you can still do so. Modify either the name of the application directory or the name of the `lua` file so that loading it does not conflict with the existing module file. For example, you could name the local module `tophat-train332/2.1.1` so it is different from any other `tophat/2.1.1`.
 
 Now, set permissions and try loading your neighbor's (or my) version of Tophat.
 

@@ -4,7 +4,7 @@ In order to login or transfer files to a remote Linux file system, you must know
 
 ```
 $ whoami
-wallen
+train332
 $ hostname -f
 login1.maverick.tacc.utexas.edu
 ```
@@ -12,7 +12,7 @@ login1.maverick.tacc.utexas.edu
 Given that information, a user would remotely login to this Linux machine using the Terminal command:
 
 ```
-$ ssh wallen@maverick.tacc.utexas.edu
+$ ssh train332@maverick.tacc.utexas.edu
 (enter password)
 (enter token)
 ```
@@ -27,15 +27,15 @@ Windows users would typically use the program "PuTTY" to perform this operation.
 Copying files from your local computer to Maverick would require the `scp` command (Windows users use the program "WinSCP"):
 
 ```
-[local]$ scp my_file wallen@maverick.tacc.utexas.edu:~/
+[local]$ scp my_file train332@maverick.tacc.utexas.edu:~/
 (enter password)
 (enter token)
 ```
 
-In this command, you specify the name of the file you want to transfer (`my_file`), the username (`wallen`), the hostname (`maverick.tacc.utexas.edu`), and the path you want to put the file (`~/`). Take careful notice of the seperators including spaces, the @ symbol and the colon. Copy files from Maverick to your local computer using ths following:
+In this command, you specify the name of the file you want to transfer (`my_file`), the username (`train332`), the hostname (`maverick.tacc.utexas.edu`), and the path you want to put the file (`~/`). Take careful notice of the seperators including spaces, the @ symbol and the colon. Copy files from Maverick to your local computer using ths following:
 
 ```
-[local]$ scp wallen@maverick.tacc.utexas.edu:~/my_file ./
+[local]$ scp train332@maverick.tacc.utexas.edu:~/my_file ./
 (enter password)
 (enter token)
 ```
