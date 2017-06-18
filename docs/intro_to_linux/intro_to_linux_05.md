@@ -43,7 +43,7 @@ A "tar archive" is a collection of files and directories all bundled up into a s
 ```
 $ cd ../
 $ pwd 
-/work/03439/wallen/public/IntroToLinuxHPC
+/work/0003/train332public/IntroToLinuxHPC
 $ tar -cvf Lab02.tar Lab02/
 Lab02/
 Lab02/chr21.fa

@@ -23,7 +23,7 @@ $ remora tophat -r 20 test_ref reads_1.fq reads_2.fq
  Max IO Load / tacc           :       0 IOPS     --- RD(MB/S)         WR(MB/S)
 ==============================================================================
  Sampling Period              : 10 seconds
- Complete Report Data         : /work/03439/wallen/maverick/apps/tophat-test/test_data/remora_865171
+ Complete Report Data         : /work/0003/train332maverick/apps/tophat-test/test_data/remora_865171
 ==============================================================================
 ...
 ```

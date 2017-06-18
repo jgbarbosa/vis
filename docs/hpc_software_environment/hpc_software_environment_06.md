@@ -4,7 +4,7 @@ Now that you have installed Tophat in your account and confirmed that it is work
 
 Navigate to your `apps` directory on maverick and find your `tophat` folder:
 ```
-$ cd /work/03439/wallen/maverick/apps
+$ cd /work/0003/train332maverick/apps
 $ ls -l
 drwx------  3 wallen G-815499       4096 Jun  2 14:16 tophat/
 ```
@@ -27,7 +27,7 @@ Notice the new `o` in `go=u-w`. The permissions have been changed for all files 
 ```
 $ cd ../
 $ pwd
-/work/03439/wallen/maverick
+/work/0003/train332maverick
 $ chmod go=u-w apps/
  
 $ cd ../
@@ -52,7 +52,7 @@ $ chmod -R go-rwx directory/
 
 The `go-rwx` directive will remove all read, write, and execute permissions from everyone except the owner from a folder called `directory/`. It may be good practice to put all files you want to share in one central location to limit the number of places you make accessible. For example, I only have opened permissions in one directory on my own account:
 ```
-$ ls -l /work/03439/wallen/public
+$ ls -l /work/0003/train332public
 ```
 
 Previous: [Profiling an Application](hpc_software_environment_05.md) | Next: [Making Modules](hpc_software_environment_07.md) | Top: [Course Overview](../../index.md)

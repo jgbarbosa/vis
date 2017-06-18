@@ -4,7 +4,7 @@ The easiest way to share an application with your colleagues (or others) is to w
 ```
 $ cd $WORK/apps
 $ pwd
-/work/03439/wallen/maverick/apps
+/work/0003/train332maverick/apps
 $ ls                              # my installation of tophat is in this same folder
 $ mkdir -p modulefiles/tophat     # check the man page if you do not know what -p does
 ```
@@ -75,8 +75,8 @@ whatis("Keywords: Biology, Genomics, Alignment, Sequencing")
 whatis("URL: https://ccb.jhu.edu/software/tophat/tutorial.shtml")
 whatis("Description: A spliced read mapper for RNA-seq")
 
-setenv("TACC_TOPHAT_DIR", "/work/03439/wallen/maverick/apps/tophat/2.1.1")
-prepend_path("PATH",      "/work/03439/wallen/maverick/apps/tophat/2.1.1/bin")
+setenv("TACC_TOPHAT_DIR", "/work/0003/train332maverick/apps/tophat/2.1.1")
+prepend_path("PATH",      "/work/0003/train332maverick/apps/tophat/2.1.1/bin")
 
 prereq("bowtie/2.2.6")
 prereq("boost/1.59")
@@ -94,9 +94,9 @@ This is the list of locations that the `module avail` or `module load` commands 
 ```
 $ cd $WORK/apps/modulefiles
 $ pwd
-/work/03439/wallen/maverick/apps/modulefiles
+/work/0003/train332maverick/apps/modulefiles
 $ echo $PWD
-/work/03439/wallen/maverick/apps/modulefiles
+/work/0003/train332maverick/apps/modulefiles
 $ module use $PWD
 $ echo $MODULEPATH
 ```
@@ -112,13 +112,13 @@ $ tophat --version
 
 The final step is to modify the permissions of the module file (and parent directories) to share with your target group. For example:
 ```
-$ cd /work/03439/wallen/maverick/apps
+$ cd /work/0003/train332maverick/apps
 $ chmod -R go=u-w modulefiles                  # this is assuming I already changed permissions above this dir
 ```
 
 Then, you would need to just ask your colleagues to execute the following command to have access to your module:
 ```
-$ module use /work/03439/wallen/maverick/apps/modulefiles
+$ module use /work/0003/train332maverick/apps/modulefiles
 ```
 
 
