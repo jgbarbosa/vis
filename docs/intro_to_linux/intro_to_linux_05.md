@@ -42,8 +42,8 @@ A "tar archive" is a collection of files and directories all bundled up into a s
 
 ```
 $ cd ../
-$ pwd 
-/work/0003/train332/public/IntroToLinuxHPC
+$ pwd
+/work/0003/train332/maverick/public/IntroToLinuxHPC
 $ tar -cvf Lab02.tar Lab02/
 Lab02/
 Lab02/chr21.fa
@@ -109,4 +109,3 @@ There will be more on linking and changing permissions in the context of Data Ma
 
 
 Previous: [Looking at the Contents of Files](intro_to_linux_04.md) | Next: [Network and File Transfers](intro_to_linux_06.md) | Top: [Course Overview](../../index.md)
-

@@ -6,7 +6,7 @@ Everything we have seen so far has been with empty files and folders. We will no
 $ cd ~     # the tilde ~ is also a shortcut referring to your home directory
 $ pwd
 /home/03439/train332
-$ cp /work/0003/train332/public/IntroToLinuxHPC.tar .
+$ cp /work/0003/train332/maverick/public/IntroToLinuxHPC.tar .
 ```
 
 Try to use `<Tab>` to autocomplete the name of the file. Do NOT change the username or lustre number to your username and lustre number - in this case you are copying a file from my directory to your directory. Also, please notice the single dot `.` at the end of the copy command, which indicates that you want to cp the tar archive to `.`, this present location (your home directory).
@@ -116,4 +116,3 @@ Although it is not always necessary, it is safe to put the search term in quotes
 
 
 Previous: [Creating and Manipulating Files](intro_to_linux_03.md) | Next: [More File Commands](intro_to_linux_05.md) | Top: [Course Overview](../../index.md)
-

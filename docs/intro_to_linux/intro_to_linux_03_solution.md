@@ -2,7 +2,7 @@
 
 1) Navigate to your home directory
 
-2) Execute this exact command: `cp -r /work/0003/train332/public/challenge02 ./`
+2) Execute this exact command: `cp -r /work/0003/train332/maverick/public/challenge02 ./`
 
 3) Navigate into the `challenge02` folder.
 
@@ -10,7 +10,7 @@
 $ cd
 $ pwd
 /home1/0003/train332
-$ cp -r /work/0003/train332/public/challenge02 ./
+$ cp -r /work/0003/train332/maverick/public/challenge02 ./
 $ cd challenge02
 ```
 
