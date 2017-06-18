@@ -6,10 +6,10 @@ Data compression is an easy way to save space and stay within your quota. Raw te
 
 ```
 $ pwd
-/home1/03439/wallen/IntroToLinuxHPC/Lab01
+/home1/0003/train332/IntroToLinuxHPC/Lab01
 $ cd ../Lab02
 $ pwd
-/home1/03439/wallen/IntroToLinuxHPC/Lab02
+/home1/0003/train332/IntroToLinuxHPC/Lab02
 $ ls
 Homo_sapiens.GRCh38.dna.chromosome.21.fa  README
 ```

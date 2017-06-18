@@ -35,7 +35,7 @@ $ cat job.slurm
 First, we must know an application we want to run, and a research question we want to ask. This generally comes from your own research. For this example, we want to use the application called `autodock_vina` to check how well a small molecule ligand fits within a protein binding site. All the data required for this job is in a subdirectory called `data`:
 ```
 $ pwd
-/home1/03439/wallen/IntroToLinuxHPC/Lab04
+/home1/0003/train332/IntroToLinuxHPC/Lab04
 $ ls
 data  job.slurm  results
 $ ls data/

@@ -9,7 +9,7 @@
 ```
 $ cd
 $ pwd
-/home1/03439/wallen
+/home1/0003/train332
 $ cp -r /work/03439/wallen/public/challenge02 ./
 $ cd challenge02
 ```

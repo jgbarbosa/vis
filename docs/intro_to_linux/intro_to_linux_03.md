@@ -5,7 +5,7 @@ We have seen how to navigate around the filesystem and perform operations with f
 ```
 $ cd          # cd on an empty line will automatically take you back to the home directory
 $ pwd
-/home1/03439/wallen
+/home1/0003/train332
 $ touch file_a
 $ touch file_b
 $ touch file_c

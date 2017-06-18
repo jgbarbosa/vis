@@ -9,7 +9,7 @@ Note: Text following a pound sign `#` are comments
 ```
 $ cd               # cd without any arguments navigates to the home directory
 $ pwd
-/home1/03439/wallen
+/home1/0003/train332
 $ mkdir challenge01
 $ cd challenge01   
 ```
@@ -43,10 +43,10 @@ $ mkdir 1 2 3 4 5
 ```
 $ cd ..           
 $ pwd              
-/home1/03439/wallen/challenge01  
+/home1/0003/train332/challenge01  
 $ cd ..            
 $ pwd              
-/home1/03439/wallen              
+/home1/0003/train332              
 $ tree challenge01 
 challenge01                      
 |-- a                            

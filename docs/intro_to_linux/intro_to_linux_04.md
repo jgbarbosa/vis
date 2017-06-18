@@ -25,7 +25,7 @@ In the first lab (`Lab01`), we have a file called `websters.txt`. This a list of
 $ cd IntroToLinuxHPC
 $ cd Lab01
 $ pwd
-/home1/03439/wallen/IntroToLinuxHPC/Lab01
+/home1/0003/train332/IntroToLinuxHPC/Lab01
 $ ls
 README websters.txt
 ```

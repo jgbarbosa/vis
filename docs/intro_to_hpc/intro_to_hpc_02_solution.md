@@ -26,7 +26,7 @@ $ env | grep "wallen"
 $ echo $DICTIONARY        # nothing here yet
 $ export DICTIONARY="$HOME/IntroToLinuxHPC/Lab01/websters.txt"
 $ echo $DICTIONARY
-/home1/03439/wallen/IntroToLinuxHPC/Lab01/websters.txt
+/home1/0003/train332/IntroToLinuxHPC/Lab01/websters.txt
 $ head $DICTIONARY
 A
 a

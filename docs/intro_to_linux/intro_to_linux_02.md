@@ -4,7 +4,7 @@ On a Windows or Mac desktop, our present location determines what files and fold
 
 ```
 $ pwd
-/home1/03439/wallen
+/home1/0003/train332
 ```
 
 This home location on the Linux filesystem is unique for each user, and it is roughly analogous to C:\Users\username on Windows, or /Users/username on Mac.
@@ -33,10 +33,10 @@ Now we have some folders to work with. To "open" a folder, navigate into that fo
 
 ```
 $ pwd
-/home1/03439/wallen
+/home1/0003/train332
 $ cd folder1
 $ pwd
-/home1/03439/wallen/folder1
+/home1/0003/train332/folder1
 ```
 
 Now that we are inside folder1, make a few sub-folders:
@@ -54,7 +54,7 @@ Use `cd` to Navigate into `subfolderA`, then use `ls` to list the contents. What
 ```
 $ cd subfolderA
 $ pwd
-/home1/03439/wallen/folder1/subfolderA
+/home1/0003/train332/folder1/subfolderA
 $ ls
 ```
 
@@ -62,20 +62,20 @@ There is nothing there because we have not made anything yet. Next, we will navi
 
 ```
 $ pwd
-/home1/03439/wallen/folder1/subfolderA
-$ cd /home1/03439/wallen/folder1
+/home1/0003/train332/folder1/subfolderA
+$ cd /home1/0003/train332/folder1
 $ pwd
-/home1/03439/wallen/folder1/
+/home1/0003/train332/folder1/
 ```
 
 Or, we could use a shortcut, `..`, which refers to the **parent folder** - one level higher than the present location:
 
 ```
 $ pwd
-/home1/03439/wallen/folder1
+/home1/0003/train332/folder1
 $ cd ..
 $ pwd
-/home1/03439/wallen
+/home1/0003/train332
 ```
 
 We are back in our home directory. Finally, use the  `rmdir` (remove directory) command to remove folders. This will not work on folders that have any contents (more on this later):

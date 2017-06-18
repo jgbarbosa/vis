@@ -2,7 +2,7 @@
 1) Extract every word from `websters.txt` that contains the string `apple`, and put it into a new file called `apple.txt`.
 ```
 $ pwd
-/home1/03439/wallen
+/home1/0003/train332
 $ cd IntroToLinuxHPC/Lab01
 $ grep "apple" websters.txt > apple.txt
 ```
