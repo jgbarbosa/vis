@@ -1,6 +1,6 @@
 ## Visualization on stampede2
 
-While batch visualization can be performed on any stampede2 node, a set of nodes have been configured for hardware-accelerated rendering. The vis queue contains a subset of 132 compute nodes configured with one NVIDIA K40 GPU each.
+While batch visualization can be performed on any Stampede 2 node, a set of nodes have been configured for hardware-accelerated rendering.
 
 ### Launch Remote Desktop
 

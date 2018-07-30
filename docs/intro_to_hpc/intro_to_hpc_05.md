@@ -1,6 +1,6 @@
 ## Batch Job Submission
 
-As we discussed before, on stampede2 there are login nodes and compute nodes.
+As we discussed before, on Stampede 2 there are login nodes and compute nodes.
 
 <center><img src="../../resources/hpc_schematic.png" style="height:300px;"></center>
 
