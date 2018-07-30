@@ -1,35 +1,35 @@
 Note: Text following a pound sign `#` are comments
 
-1) Identify which Maverick login node you are on (login1, login2, login3)
+1) Identify which stampede2 login node you are on (login1, login2, login3)
 ```
 $ hostname
 login1
 $ hostname -f
-login1.maverick.tacc.utexas.edu
+login1.stampede2.tacc.utexas.edu
 ```
 
-2) Remotely login to a different Maverick login node and list what files are available.
+2) Remotely login to a different stampede2 login node and list what files are available.
 ```
-login1.maverick$ ssh train332@login2.maverick.tacc.utexas.edu
-login2.maverick$ ls
+login1.stampede2$ ssh train332@login2.stampede2.tacc.utexas.edu
+login2.stampede2$ ls
 ... # the same files will be available on different login nodes
-login2.maverick$ ssh login3.maverick.tacc.utexas.edu    # what happens if you omit the username?
-login3.maverick$ ssh login1                        # what happens if you omit most of the hostname?
-login1.maverick$ 
+login2.stampede2$ ssh login3.stampede2.tacc.utexas.edu    # what happens if you omit the username?
+login3.stampede2$ ssh login1                        # what happens if you omit most of the hostname?
+login1.stampede2$ 
 ```
 
 3) Logout until you are back to your original login node.
 ```
-login1.maverick$ logout
-login3.maverick$ logout
-login2.maverick$ logout
-login1.maverick$             # logout one more time and you will be back on the local system
+login1.stampede2$ logout
+login3.stampede2$ logout
+login2.stampede2$ logout
+login1.stampede2$             # logout one more time and you will be back on the local system
 ```
 
 4) Copy the file `chr21.fa` to your local computer.
 ```
 # from new Terminal session
-[local]$ ssh train332@maverick.tacc.utexas.edu:~/IntroToLinuxHPC/Lab02/chr21.fa ./
+[local]$ ssh train332@stampede2.tacc.utexas.edu:~/IntroToLinuxHPC/Lab02/chr21.fa ./
 (enter password)
 (enter token)
 ```

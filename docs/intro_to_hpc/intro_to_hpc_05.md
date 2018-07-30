@@ -1,12 +1,12 @@
 ## Batch Job Submission
 
-As we discussed before, on Maverick there are login nodes and compute nodes.
+As we discussed before, on stampede2 there are login nodes and compute nodes.
 
 <center><img src="../../resources/hpc_schematic.png" style="height:300px;"></center>
 
 We cannot run the applications we need for our research on the login nodes because they require too many resources and will interrupt the work of others. Instead, we must write a short text file containing a list of the resources we need, and containing the command(s) for running the application. Then, we submit that text file to a queue to run on compute nodes. This process is called **batch job submission**.
 
-There are several queues available on Maverick. It is important to understand the queue limitations, and pick a queue that is appropriate for your job. Documentation can be found [here](https://portal.tacc.utexas.edu/user-guides/Maverick#production-queues). Today, we will be using the `development` queue which has a max runtime of 2 hours, and users can only submit one job at a time.
+There are several queues available on Stampede 2. It is important to understand the queue limitations, and pick a queue that is appropriate for your job. Documentation can be found [here](https://portal.tacc.utexas.edu/user-guides/stampede2#production-queues). Today, we will be using the `development` queue which has a max runtime of 2 hours, and users can only submit one job at a time.
 
 
 First, navigate to the `Lab04` directory where we have an example job script prepared, called `job.slurm`:
@@ -89,7 +89,7 @@ If for any reason you need to cancel a job, use the `scancel` command with the 6
 $ scancel jobid
 ```
 
-For more example scripts, see this directory on Maverick:
+For more example scripts, see this directory on Stampede 2:
 ```
 $ ls /share/doc/slurm/
 ```
@@ -108,7 +108,7 @@ output_ligands.pdbqt
 
 *(Output visualized in UCSF Chimera)*
 
-Congratulations! You ran a batch job on Maverick!
+Congratulations! You ran a batch job on Stampede 2!
 
 ### Other Considerations:
 
@@ -135,4 +135,4 @@ HPC systems are shared resources. Your jobs and activity on a cluster, if misman
 
 
 
-Previous: [The .bashrc](intro_to_hpc_04.md) | Next: [Visualization on Maverick](intro_to_hpc_06.md) | Top: [Course Overview](../../index.md)
+Previous: [The .bashrc](intro_to_hpc_04.md) | Next: [Visualization on Stampede 2](intro_to_hpc_06.md) | Top: [Course Overview](../../index.md)

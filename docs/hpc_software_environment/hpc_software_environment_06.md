@@ -1,10 +1,10 @@
 ## Sharing an Application
 
-Now that you have installed Tophat in your account and confirmed that it is working, you may want to share it with other members of your lab, or with the wider community. In order to do that, we must change "permissions" on the Tophat installation folder so that other Maverick users can see it.
+Now that you have installed Tophat in your account and confirmed that it is working, you may want to share it with other members of your lab, or with the wider community. In order to do that, we must change "permissions" on the Tophat installation folder so that other stampede2 users can see it.
 
-Navigate to your `apps` directory on maverick and find your `tophat` folder:
+Navigate to your `apps` directory on stampede2 and find your `tophat` folder:
 ```
-$ cd /work/0003/train332/maverick/apps
+$ cd /work/0003/train332/stampede2/apps
 $ ls -l
 drwx------  3 train332 G-815002       4096 Jun  2 14:16 tophat/
 ```
@@ -16,24 +16,24 @@ $ ls -l
 drwxr-x---  3 train332 G-815002       4096 Jun  2 14:16 tophat/
 ```
 
-The `-R` flag is used to change permissions recursively (all folders and files within `tophat`). The `g=u-w` directive is used to give members of the same Linux group the same permissions as the owner, minus write permissions. To do the same thing but for all others on Maverick, do:
+The `-R` flag is used to change permissions recursively (all folders and files within `tophat`). The `g=u-w` directive is used to give members of the same Linux group the same permissions as the owner, minus write permissions. To do the same thing but for all others on stampede2, do:
 ```
 $ chmod -R go=u-w tophat/
 $ ls -l
 drwxr-xr-x  3 train332 G-815002       4096 Jun  2 14:16 tophat/
 ```
 
-Notice the new `o` in `go=u-w`. The permissions have been changed for all files within the `tophat` directory. But, we are not done quite yet. We need to walk up and change permissions on the `apps`, `maverick`, and `train332` directories as well:
+Notice the new `o` in `go=u-w`. The permissions have been changed for all files within the `tophat` directory. But, we are not done quite yet. We need to walk up and change permissions on the `apps`, `stampede2`, and `train332` directories as well:
 ```
 $ cd ../
 $ pwd
-/work/0003/train332/maverick
+/work/0003/train332/stampede2
 $ chmod go=u-w apps/
  
 $ cd ../
 $ pwd
 /work/03439/train332
-$ chmod go=u-w maverick/
+$ chmod go=u-w stampede2/
  
 $ cd ../
 $ pwd

@@ -4,7 +4,7 @@ We installed Tophat, now it is time to test it to make sure it is working. Revis
 
 First, we will create a suitable place to test.
 ```
-$ cd /work/0003/train332/maverick/apps/
+$ cd /work/0003/train332/stampede2/apps/
 $ mkdir tophat-test
 $ cd tophat-test
 ```
@@ -17,7 +17,7 @@ $ cd test_data
 $ ls -l
 ```
 
-Since it is against policy to run applications on the login nodes, we must gain access to a compute node. The TACC tool `idev` is used to start an interactive session on a Maverick compute node. Interactive sessions are helpful to test code, debug code, and practice small jobs before submitting large jobs:
+Since it is against policy to run applications on the login nodes, we must gain access to a compute node. The TACC tool `idev` is used to start an interactive session on a stampede2 compute node. Interactive sessions are helpful to test code, debug code, and practice small jobs before submitting large jobs:
 ```
 $ idev --help
 $ idev -p normal -m 180 --reservation=VIS...
@@ -35,7 +35,7 @@ We also have to put Tophat in our path. There is no module for Tophat yet, so we
 ```
 $ echo $PATH        
 $ which tophat      # no tophat yet
-$ export PATH=$PATH:/work/0003/train332/maverick/apps/tophat/2.1.1/bin
+$ export PATH=$PATH:/work/0003/train332/stampede2/apps/tophat/2.1.1/bin
 $ echo $PATH
 $ which tophat      # tophat now in path
 ```

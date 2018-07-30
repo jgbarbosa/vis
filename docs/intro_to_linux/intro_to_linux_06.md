@@ -6,13 +6,13 @@ In order to login or transfer files to a remote Linux file system, you must know
 $ whoami
 train332
 $ hostname -f
-login1.maverick.tacc.utexas.edu
+login1.stampede2.tacc.utexas.edu
 ```
 
 Given that information, a user would remotely login to this Linux machine using the Terminal command:
 
 ```
-$ ssh train332@maverick.tacc.utexas.edu
+$ ssh train332@stampede2.tacc.utexas.edu
 (enter password)
 (enter token)
 ```
@@ -20,22 +20,22 @@ $ ssh train332@maverick.tacc.utexas.edu
 Windows users would typically use the program "PuTTY" to perform this operation. Logging out of a remote system is done using the `logout` command, or the shortcut `<Ctrl+d>`:
 
 ```
-  [maverick]$ logout
+  [stampede2]$ logout
 [local]$ 
 ```
 
-Copying files from your local computer to Maverick would require the `scp` command (Windows users use the program "WinSCP"):
+Copying files from your local computer to stampede2 would require the `scp` command (Windows users use the program "WinSCP"):
 
 ```
-[local]$ scp my_file train332@maverick.tacc.utexas.edu:~/
+[local]$ scp my_file train332@stampede2.tacc.utexas.edu:~/
 (enter password)
 (enter token)
 ```
 
-In this command, you specify the name of the file you want to transfer (`my_file`), the username (`train332`), the hostname (`maverick.tacc.utexas.edu`), and the path you want to put the file (`~/`). Take careful notice of the seperators including spaces, the @ symbol and the colon. Copy files from Maverick to your local computer using ths following:
+In this command, you specify the name of the file you want to transfer (`my_file`), the username (`train332`), the hostname (`stampede2.tacc.utexas.edu`), and the path you want to put the file (`~/`). Take careful notice of the seperators including spaces, the @ symbol and the colon. Copy files from stampede2 to your local computer using ths following:
 
 ```
-[local]$ scp train332@maverick.tacc.utexas.edu:~/my_file ./
+[local]$ scp train332@stampede2.tacc.utexas.edu:~/my_file ./
 (enter password)
 (enter token)
 ```
@@ -53,8 +53,8 @@ This is just the basics of copying files. See example `scp` usage [here](https:/
 
 ### Exercise
 
-1. Identify which Maverick login node you are on (login1, login2, login3)
-2. Remotely login to a different Maverick login node and list what files are available.
+1. Identify which stampede2 login node you are on (login1, login2, login3)
+2. Remotely login to a different stampede2 login node and list what files are available.
 3. Logout until you are back to your original login node.
 4. Copy the file `chr21.fa` to your local computer.
 

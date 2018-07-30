@@ -20,7 +20,7 @@ $ module list
 
 *Having both intel and gcc compilers loaded would be a conflict, so the module system does not allow it.*
 
-2) Determine recommended compiler / dependencies for a software package you use. Are they available on Maverick?
+2) Determine recommended compiler / dependencies for a software package you use. Are they available on stampede2?
 
 *As an example application, we will consider [Tophat](https://ccb.jhu.edu/software/tophat/tutorial.shtml). Listed on the Tophat website are the following dependencies: `bowtie`, `boost`
 ```
