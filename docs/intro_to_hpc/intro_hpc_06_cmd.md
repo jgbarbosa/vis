@@ -44,7 +44,7 @@ On Windows systems find the menu in the Windows SSH client where tunnels can be 
 
 Once the SSH tunnel has been established, use a VNC client to connect to the local port you created, which will then be tunneled to your VNC server on stampede2. Connect to localhost:xxxx, where xxxx is the local port you used for your tunnel. In the examples above, we would connect the VNC client to localhost::xxxx. (Some VNC clients accept localhost:xxxx).
 
-We recommend the [TigerVNC VNC Client](http://tigervnc.org/), a platform independent client/server application.
+We recommend the [TigerVNC VNC Client](https://tigervnc.org/), a platform independent client/server application.
 
 Once the desktop has been established, two initial xterm windows are presented (which may be overlapping). One, which is white-on-black, manages the lifetime of the VNC server process. Killing this window (typically by typing "exit" or "ctrl-D" at the prompt) will cause the vncserver to terminate and the original batch job to end. Because of this, we recommend that this window not be used for other purposes; it is just too easy to accidentally kill it and terminate the session.
 

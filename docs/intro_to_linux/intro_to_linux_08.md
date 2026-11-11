@@ -45,8 +45,8 @@ arrow keys        move up, down, left, right
 
 
 For more information, see:
-  * [http://openvim.com/](http://openvim.com/)
-  * [http://vim-adventures.com/](http://vim-adventures.com/) 
+  * [https://openvim.com/](https://openvim.com/)
+  * [https://vim-adventures.com/](https://vim-adventures.com/) 
   * Or type on the command line: `vimtutor`
 
 ### Exercise
